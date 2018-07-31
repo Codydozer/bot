@@ -106,15 +106,15 @@ async def menu():
                   )
     mains = ('steak', 'lamb shank', 'pork loin', 'spinach & ricotta canneloni', 'shit sandwich',
              'lasagna', 'mediterranean chicken', 'veggie burger',
-             'cheese tortellini', 'chicken pesto pasta',
+             'cheese tortellini', 'chicken pesto pasta', 'wish soup'
              'chilli', 'ribs', 'lemon pepper tuna')
     sweets = ('cookie', 'mars bar', 'skittles', 'smokey bacon crisps',
               'popcorn', 'dried prunes', 'crackers', 'cheese curls',
-              'granola bar', 'pound cake', 'nuts'
+              'granola bar', 'pound cake', 'nuts', 'lollipops'
               )
     drinks = ('water', 'flavoured water', 'salt water', 'bleach scented soda', 'soda water', 'orangeade', 'cola',
               'fruit juice', 'cherryade', 'appleade', 'lemonade', 'milkshake',
-              'smoothie'
+              'smoothie', 'hotdog water'
               )
 
     adj = random.choice(adjectives)
