@@ -102,7 +102,7 @@ async def menu():
     """Gives you a randomized selection of food."""
     adjectives = ('awful', 'burnt', 'well-done', 'excellent', 'over-salted', 'bland',
                   'spicy', 'undercooked', 'yummy', 'satisfying', 'exciting',
-                  'disgusting'
+                  'disgusting', 'deep fried'
                   )
     mains = ('steak', 'lamb shank', 'pork loin', 'spinach & ricotta canneloni', 'shit sandwich',
              'lasagna', 'mediterranean chicken', 'veggie burger',
