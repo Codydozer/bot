@@ -122,7 +122,7 @@ async def menu():
     sweet = random.choice(sweets)
     drink = random.choice(drinks)
 
-    rationsresult = 'Your order contain ' + adj +' '+ main +', '+ sweet +' and '+ drink + '. Top nosh!'
+    rationsresult = 'Your order contains a unique ' + adj +' '+ main +', '+ sweet +' and '+ drink + '. Top nosh!'
 
     await bot.say(rationsresult)
 
