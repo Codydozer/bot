@@ -7,7 +7,7 @@ import asyncio
 import importlib
 import math
 import datetime
-from datetime import time, tzinfo, timedelta
+from datetime import tzinfo, timedelta, datetime
 
 
 
@@ -26,10 +26,21 @@ async def on_ready():
     print('------')
 
 #global var setup
-month = 9
-year = 2
+month = 1
+year = 4
 monthName = "temp"
-realtime = datetime.datetime.now(tz=None)
+#realtime = datetime.now(tz=None)
+
+
+currentTime = datetime.now()
+staticTime = datetime(
+    hour=24
+    )
+
+difference = (currentTime - staticTime)
+if (difference >= 1):
+    month += 1
+    return month
 
 #when month == 12, increase year by 1 and set month to 0
 #this is the time engine, this may have to be made a class soon in order to drive the other 100000 functions and events i require in order to run efficiently and to save my SANITY
@@ -39,16 +50,16 @@ async def time(message):
 #global var pull
     global month
     global year
-    global realtime
+    global currentTime
+    global staticTime
 
-    if realtime.hour == 24:
+    difference = (currentTime - staticTime)
+
+
+
+    if (difference >= 1):
         month += 1
         return month
-
-    if month == 13:
-        month = 1
-        year += 1
-        return month, year
 
     if month == 1:
         monthName = "January,"
